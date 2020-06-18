@@ -120,6 +120,16 @@ main {
   z-index: 80;
 }
 
+.articleWrap {
+  margin: auto;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .articleWrap {
+    width: 75%;
+  }
+}
+
 /* ============================================= */
 /*              Footer Styling                   */
 /* ============================================= */
