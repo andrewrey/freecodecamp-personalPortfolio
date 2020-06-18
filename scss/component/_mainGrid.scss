@@ -4,4 +4,33 @@
 
 main{
     padding-top: 200px;
+    position: relative;
+    min-height: calc(100vh - 50px);
+}
+
+
+#about,
+#projects,
+#contact {
+    position: absolute;
+    top: 200px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#about{
+    background-color: lightpink;
+    z-index: 100;
+}
+
+#projects{
+    background-color: lightseagreen;
+    z-index: 90;
+}
+
+#contact{
+    background-color: lightskyblue;
+    z-index: 80;
+
 }

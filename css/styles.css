@@ -17,6 +17,7 @@
 /* ============================================= */
 .front-cover {
   position: absolute;
+  z-index: 1000;
   top: 0;
   left: 0;
   background-image: url("../img/road.jpg");
@@ -89,10 +90,43 @@ nav ul li a:hover {
 /* ============================================= */
 main {
   padding-top: 200px;
+  position: relative;
+  min-height: calc(100vh - 50px);
+}
+
+#about,
+#projects,
+#contact {
+  position: absolute;
+  top: 200px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#about {
+  background-color: lightpink;
+  z-index: 100;
+}
+
+#projects {
+  background-color: lightseagreen;
+  z-index: 90;
+}
+
+#contact {
+  background-color: lightskyblue;
+  z-index: 80;
 }
 
 /* ============================================= */
 /*              Footer Styling                   */
 /* ============================================= */
+footer {
+  height: 50px;
+}
+footer p {
+  margin: 0;
+}
 
 /*# sourceMappingURL=styles.css.map */
