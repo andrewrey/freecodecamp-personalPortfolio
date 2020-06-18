@@ -3,8 +3,10 @@
 /* ============================================= */
 
 
-
 .front-cover{
+    position: absolute;
+    top:0;
+    left:0;
     background-image: url("../img/road.jpg");
     background-size: cover;
     background-repeat: none;
@@ -33,4 +35,8 @@
             font-size: 1.2rem;
         }
     }
+}
+
+.hide{
+    display: none;
 }
