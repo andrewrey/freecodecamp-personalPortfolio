@@ -28,14 +28,20 @@
   justify-content: center;
   align-items: center;
 }
-.front-cover h1 {
-  margin: 0;
-}
 .front-cover .front-cover-textWrap {
   border-radius: 10px;
   box-shadow: 2px 2px 6px black;
   background-color: rgba(185, 187, 189, 0.8);
   text-align: center;
+  padding: 10px 20px;
+  width: 75%;
+  color: white;
+}
+.front-cover .front-cover-textWrap h1 {
+  margin: 0;
+}
+.front-cover .front-cover-textWrap p {
+  font-size: 1.2rem;
 }
 
 /* ============================================= */
