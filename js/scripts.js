@@ -12,7 +12,7 @@ function createCard(item){
     card.innerHTML = `
         <h2>${name}</h2>
         <div class="cardInfo">
-            <a href="${link}"><img src="${image}"></a>
+            <a href="${link}" target="_blank"><img src="${image}"></a>
             <p>${description}</p>
         </div>
     `;

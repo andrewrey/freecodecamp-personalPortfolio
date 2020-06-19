@@ -57,6 +57,8 @@ main{
     grid-template-columns: repeat(auto-fit, 350px);
     gap: 10px;
     text-align: justify;
+    justify-content: center;
+    justify-items: center;
 }
 
 .projectCard{
