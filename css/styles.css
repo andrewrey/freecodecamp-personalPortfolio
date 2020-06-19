@@ -148,7 +148,13 @@ main {
 
 .projectCard {
   width: 300px;
-  border: 1px solid grey;
+  border: 1px solid black;
+  box-shadow: 0 0 12px white;
+  border-radius: 10px;
+  padding: 10px;
+}
+.projectCard h2 {
+  text-decoration: underline;
 }
 .projectCard .cardInfo {
   width: 100%;

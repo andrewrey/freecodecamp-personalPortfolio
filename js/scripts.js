@@ -1,6 +1,7 @@
 
 // Page Elements//
 const projectGrid = document.querySelector('.projectGrid');
+const navBar = document.getElementById('navbar');
 
 
 // Functions //
@@ -53,3 +54,14 @@ let projectCardArray = [
 ];
 
 projectCardArray.forEach(createCard);
+
+
+/// Event Listeners /////
+
+
+navBar.addEventListener('click', e =>{
+    let button = e.target;
+    if(button.textContent === "About"){
+        console.log('hello');
+    }
+});
