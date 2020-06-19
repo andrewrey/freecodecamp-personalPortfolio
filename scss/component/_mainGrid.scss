@@ -51,3 +51,8 @@ main{
         max-width: 960px;
     }
 }
+
+.projectGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+}
