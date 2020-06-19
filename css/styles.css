@@ -137,6 +137,29 @@ main {
   }
 }
 
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 350px);
+  gap: 10px;
+  text-align: justify;
+}
+
+.projectCard {
+  width: 300px;
+  border: 1px solid grey;
+}
+.projectCard .cardInfo {
+  width: 100%;
+}
+.projectCard a {
+  display: block;
+}
+.projectCard img {
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+
 /* ============================================= */
 /*              Footer Styling                   */
 /* ============================================= */
