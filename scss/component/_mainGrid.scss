@@ -67,10 +67,13 @@ main{
 
 .projectCard{
     width: 300px;
+    background-color: #D16014;
     border: 1px solid black;
     box-shadow: 0 0 12px white;
     border-radius: 10px;
     padding: 10px;
+    color: white;
+
     h2{
         text-decoration: underline;
     }

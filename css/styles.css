@@ -80,10 +80,16 @@ nav ul li a {
   text-decoration: none;
 }
 nav ul li a:hover {
-  background-color: lightcoral;
+  background-color: lightgreen;
 }
 nav ul li .selected {
   background-color: lightcoral;
+}
+nav ul li a:link {
+  color: black;
+}
+nav ul li a:visited {
+  color: black;
 }
 
 /* ============================================= */
@@ -151,10 +157,12 @@ main {
 
 .projectCard {
   width: 300px;
+  background-color: #D16014;
   border: 1px solid black;
   box-shadow: 0 0 12px white;
   border-radius: 10px;
   padding: 10px;
+  color: white;
 }
 .projectCard h2 {
   text-decoration: underline;
@@ -206,10 +214,29 @@ form input[type=submit] {
 /*              Footer Styling                   */
 /* ============================================= */
 footer {
+  position: relative;
   height: 50px;
 }
 footer p {
   margin: 0;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: -12px;
+}
+footer figure {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 25px;
+  margin-top: -12.5px;
+}
+footer figure a {
+  display: block;
+}
+footer figure img {
+  width: 100%;
+  display: block;
 }
 
 .hide {
