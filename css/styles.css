@@ -47,7 +47,32 @@
 .front-cover .front-cover-textWrap p {
   font-size: 1.2rem;
 }
+.front-cover .downArrow {
+  cursor: pointer;
+  position: relative;
+  margin-top: 100px;
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 50px solid white;
+  animation: moveUp-Down 1s linear infinite;
+}
 
+@keyframes moveUp-Down {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -40px, 0);
+  }
+  75% {
+    transform: translate3d(0, -20px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
 /* ============================================= */
 /*              Header Styling                   */
 /* ============================================= */
