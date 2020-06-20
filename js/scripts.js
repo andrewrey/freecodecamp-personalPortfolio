@@ -2,7 +2,9 @@
 // Page Elements//
 const projectGrid = document.querySelector('.projectGrid');
 const navBar = document.getElementById('navbar');
-
+const aboutPage = document.getElementById('about');
+const projectsPage = document.getElementById('projects');
+const contactPage = document.getElementById('contact');
 
 // Functions //
 
@@ -61,7 +63,20 @@ projectCardArray.forEach(createCard);
 
 navBar.addEventListener('click', e =>{
     let button = e.target;
+    let buttons = document.querySelectorAll('.navLink');
+    buttons.forEach(link => link.classList.contains('selected')?link.classList.remove('selected'):"");
+    aboutPage.classList.add('hide');
+    projectsPage.classList.add('hide');
+    contactPage.classList.add('hide');
+    console.log(buttons);
     if(button.textContent === "About"){
-        console.log('hello');
+        button.classList.add("selected");
+        aboutPage.classList.remove('hide');
+    } else if(button.textContent === "Projects"){
+        button.classList.add("selected");
+        projectsPage.classList.remove('hide');
+    } else if(button.textContent === 'Contact'){
+        button.classList.add("selected");
+        contactPage.classList.remove('hide');
     }
 });

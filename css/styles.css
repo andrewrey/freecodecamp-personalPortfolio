@@ -81,6 +81,9 @@ nav ul li a {
 nav ul li a:hover {
   background-color: lightcoral;
 }
+nav ul li .selected {
+  background-color: lightcoral;
+}
 
 /* ============================================= */
 /*             Main Grid Styling                 */
@@ -103,17 +106,14 @@ main {
 
 #about {
   background-color: lightpink;
-  z-index: 100;
 }
 
 #projects {
   background-color: lightseagreen;
-  z-index: 90;
 }
 
 #contact {
   background-color: lightskyblue;
-  z-index: 80;
 }
 
 .projectWrap {
