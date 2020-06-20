@@ -53,6 +53,7 @@
 /* ============================================= */
 header {
   position: fixed;
+  top: 0;
   z-index: 101;
   width: 100%;
   height: 200px;
@@ -89,9 +90,9 @@ nav ul li .selected {
 /*             Main Grid Styling                 */
 /* ============================================= */
 main {
-  padding-top: 200px;
+  margin-top: 200px;
   position: relative;
-  min-height: calc(100vh - 50px);
+  min-height: calc(100vh - 250px);
   overflow: scroll;
 }
 
@@ -99,7 +100,6 @@ main {
 #projects,
 #contact {
   position: absolute;
-  top: 200px;
   width: 100%;
   min-height: calc(100vh - 250px);
 }

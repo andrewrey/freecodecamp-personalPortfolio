@@ -3,9 +3,9 @@
 /* ============================================= */
 
 main{
-    padding-top: 200px;
+    margin-top: 200px;  // change back to padding if doesn't work
     position: relative;
-    min-height: calc(100vh - 50px);
+    min-height: calc(100vh - 250px);
     overflow: scroll;
 }
 
@@ -14,10 +14,11 @@ main{
 #projects,
 #contact {
     position: absolute;
-    top: 200px;
     width: 100%;
     min-height: calc(100vh - 250px);
 }
+
+
 
 #about{
     background-color: lightpink;
