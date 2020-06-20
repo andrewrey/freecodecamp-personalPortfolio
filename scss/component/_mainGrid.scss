@@ -31,6 +31,9 @@ main{
 
 #contact{
     background-color: lightskyblue;
+    h2{
+        text-align: center;
+    }
     // z-index: 80;
 
 }
@@ -80,5 +83,34 @@ main{
         display: block;
         width: 90%;
         margin: auto;
+    }
+}
+
+form{
+    width: 80%;
+    padding-top: 5px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px black;
+    border-radius: 10px;
+    box-shadow: 0 0 8px black;
+    @media(min-width: 768px){
+        width: 45%;
+    }
+    input,
+    label,
+    textarea {
+        width: 80%;
+        margin: 0 auto;
+    }
+    input{
+        padding: 5px 0;
+    }
+    input[type="submit"]{
+        width: 80px;
+        margin: 10px auto;
+        box-shadow: 2px 2px 4px black;
+        border-radius: 10px;
     }
 }
