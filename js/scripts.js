@@ -1,11 +1,13 @@
 
 // Page Elements//
+const frontCover = document.querySelector('.front-cover');
+const mainPage = document.querySelector('.main-page');
 const projectGrid = document.querySelector('.projectGrid');
 const navBar = document.getElementById('navbar');
 const aboutPage = document.getElementById('about');
 const projectsPage = document.getElementById('projects');
 const contactPage = document.getElementById('contact');
-
+const downArrow = document.querySelector('.downArrow');
 // Functions //
 
 function createCard(item){
@@ -60,7 +62,7 @@ projectCardArray.forEach(createCard);
 
 /// Event Listeners /////
 
-
+// when header nav button is clicked, it's selected and unhides matching card
 navBar.addEventListener('click', e =>{
     let button = e.target;
     let buttons = document.querySelectorAll('.navLink');
@@ -79,4 +81,16 @@ navBar.addEventListener('click', e =>{
         button.classList.add("selected");
         contactPage.classList.remove('hide');
     }
+});
+
+// when downarrow clicked unhides <main> 
+
+downArrow.addEventListener('click', e => {
+    frontCover.classList.add('uncover');
+    setTimeout(() => {
+        frontCover.classList.add('hide');
+    }, 2000);
+    setTimeout(()=>{
+        frontCover.classList.remove('uncover');
+    }, 2500);
 });

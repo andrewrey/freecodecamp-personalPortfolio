@@ -49,6 +49,10 @@
     }
 }
 
+
+//downarrow animation 
+
+
 @keyframes moveUp-Down{
     0%{
         transform: translate3d(0,0,0);
@@ -63,4 +67,29 @@
     100%{
         transform: translate3d(0,0,0);
     }
+}
+
+
+// to main page animation  ///
+
+
+.uncover{
+    animation: moveToMain 2s infinite;
+}
+
+
+@keyframes moveToMain{
+    0%{
+        border-radius: 0;
+    }
+
+ 
+
+    100%{
+        border-radius: 75%;
+        transform: scale(.1);
+    }
+
+  
+
 }
