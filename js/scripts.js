@@ -13,7 +13,7 @@ const downArrow = document.querySelector('.downArrow');
 function createCard(item){
     let {name, link, image, description} = item;
     let card = document.createElement('div');
-    card.className = 'projectCard';
+    card.className = 'project-tile';
     card.innerHTML = `
         <h2>${name}</h2>
         <div class="cardInfo">
