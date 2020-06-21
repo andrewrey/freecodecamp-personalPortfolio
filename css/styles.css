@@ -193,7 +193,7 @@ main {
   justify-items: center;
 }
 
-.projectCard {
+.project-tile {
   width: 300px;
   background-color: #D16014;
   border: 1px solid black;
@@ -202,16 +202,16 @@ main {
   padding: 10px;
   color: white;
 }
-.projectCard h2 {
+.project-tile h2 {
   text-decoration: underline;
 }
-.projectCard .cardInfo {
+.project-tile .cardInfo {
   width: 100%;
 }
-.projectCard a {
+.project-tile a {
   display: block;
 }
-.projectCard img {
+.project-tile img {
   display: block;
   width: 90%;
   margin: auto;
